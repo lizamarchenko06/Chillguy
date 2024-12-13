@@ -1,0 +1,117 @@
+body {
+  font-family: 'Times New Roman', Times, serif; 
+}
+
+.header {
+  position: relative;
+  background-color: #781706;
+  padding: 10px;
+  height: 200px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Разделяет элементы в навигации */
+  width: 100%;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.large-text {
+  font-size: 20px; /* Увеличьте значение по желанию */
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px;
+  width: 400px;
+  margin-right: 20px; /* Отступ справа от поисковой строки */
+}
+
+.search-txt {
+  border: none;
+  outline: none;
+  background: none;
+  color: black; /* Изменение цвета текста на черный */
+  font-size: 20px;
+  flex: 1; 
+  padding-left: 10px; 
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 30px; 
+  height: 30px;
+  border-radius: 50%; 
+  margin-left: 10px; 
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 16px; 
+  height: 16px;
+  fill: #2f3640; 
+}
+
+.contact-info {
+  color: white;
+}
+
+.gift-categories {
+  margin-top: 15px;
+}
+
+.category-button {
+  background-color: #D9D9D9;
+  color: black; 
+  border: none;
+  padding: 2px; 
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 20px; 
+  width: 200px; 
+  height: 45px; 
+  text-align: center; 
+  box-sizing: border-box; 
+  transition: background-color 0.3s, color 0.3s, outline 0.3s;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.category-button h3 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.category-button:hover {
+  background-color: transparent;
+  color: white;
+  outline: 2px solid black;
+}
+
+.header-image {
+  width: 100px; /* Установите нужный размер (увеличьте) */
+  height: auto; /* Сохраняет пропорции */
+  position: relative; /* Установите позицию относительно родителя */
+  top: 60px; /* Опустите изображение вниз */
+  left: -20px; /* Сдвиньте изображение влево */
+  margin-left: 20px; /* Дополнительный отступ слева */
+}

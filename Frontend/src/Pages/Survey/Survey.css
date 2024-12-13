@@ -1,0 +1,27 @@
+.survey-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .survey-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }

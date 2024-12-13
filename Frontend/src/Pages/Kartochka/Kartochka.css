@@ -1,0 +1,224 @@
+html, body {
+    height: 100%; /* Занимаем всю высоту страницы */
+    margin: 0; /* Убираем отступы */
+    background-color: #7c6f6f; /* Цвет фона страницы */
+}
+
+body {
+    background-image: url('./rb_542.png'); /* Укажите путь к вашему изображению */
+    background-size: cover; /* Масштабируем изображение, чтобы оно покрывало весь фон */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Не повторяем изображение */
+}
+
+.nav-link, .contact-info {
+    color: white; /* Цвет ссылок и контактной информации */
+}
+
+.header {
+    background-color: #781706; /* Цвет фона заголовка */
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-left {
+    flex: 1;
+}
+
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #fff; /* Изменил цвет на белый для лучшей видимости */
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-txt {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-info {
+    margin-left: 20px;
+}
+
+.page-container {
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    height: 100vh; /* Высота контейнера равна высоте вьюпорта */
+    background-color: rgba(249, 249, 249, 0.8); /* Цвет фона с прозрачностью для затемнения */
+}
+
+.product-card-large {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex; /* Используем flexbox для горизонтального расположения */
+    max-width: 1200px; /* Максимальная ширина карточки */
+    width: 100%; /* Ширина карточки занимает 100% доступного пространства */
+    margin: 20px; /* Отступы вокруг карточки */
+    background-color: rgb(199, 189, 189); /* Цвет фона карточки */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для эффекта */
+}
+
+.product-image-container {
+    flex: 1; /* Занимает 1 часть пространства */
+    padding: 20px; /* Отступы вокруг изображения */
+}
+
+.product-image {
+    width: 500; /* Ширина изображения занимает 100% контейнера */
+    height: 500; /* Высота автоматически подстраивается для сохранения пропорций */
+    border-radius: 8px; /* Скругление углов изображения */
+}
+
+.product-details {
+    flex: 2; /* Занимает 2 части пространства */
+    padding: 15px; /* Отступы вокруг текста */
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение текста */
+    justify-content: space-between; /* Распределение пространства между элементами */
+}
+
+.rating-container {
+    display: flex; /* Используем flexbox для расположения рейтинга и кнопки */
+    justify-content: center; /* Центрируем содержимое */
+    align-items: center; /* Вертикальное выравнивание содержимого */
+    width: 100%; /* Занимает всю ширину родительского контейнера */
+}
+
+.rating {
+    background-color: #a89d9d; /* Цвет фона для блока с рейтингом */
+    border-radius: 8px; /* Скругление углов блока с рейтингом */
+    padding: 5px; /* Отступы внутри блока с рейтингом */
+    font-size: 24px; /* Размер шрифта для звезд */
+    display: flex; /* Используем flexbox для расположения звезд */
+    justify-content: center; /* Центрируем звезды */
+    margin-right: 10px; /* Отступ справа для расстояния между рейтингом и кнопкой */
+}
+
+.star {
+    color: #e4c204; /* Цвет звезд (золотой) */
+}
+
+.favorite-button {
+    background-color:#a89d9d ; /* Прозрачный фон для кнопки */
+    border: 1px solid #a89d9d; /* Рамка для кнопки */
+    border-radius: 8px; /* Скругление углов кнопки */
+    width: 40px; /* Ширина кнопки */
+    height: 40px; /* Высота кнопки */
+    display: flex; /* Используем flexbox для центрирования иконки */
+    align-items: center; /* Вертикальное выравнивание иконки */
+    justify-content: center; /* Горизонтальное выравнивание иконки */
+    cursor: pointer; /* Курсор при наведении */
+}
+
+.favorite-icon {
+    width: 20px; /* Ширина иконки */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+
+.favorite-button:hover {
+    background-color: #8b2412; /* Цвет фона при наведении */
+}
+.product-title {
+    font-size: 24px; /* Размер шрифта для названия продукта */
+    font-weight: 700; /* Жирный шрифт */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.product-price-container {
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем содержимое */
+    margin: 5px 0; /* Отступы сверху и снизу */
+}
+
+.product-price {
+    background-color: #a89d9d; /* Цвет фона для блока с ценой */
+    border-radius: 8px; /* Скругление углов блока с ценой */
+    padding: 10px 20px; /* Отступы внутри блока с ценой */
+    font-size: 30px; /* Размер шрифта для цены */
+    font-weight: 700; /* Жирный шрифт */
+    color: #ffffff; /* Цвет текста */
+}
+
+.button-container {
+    display: flex; /* Используем flexbox для центрирования кнопки */
+    justify-content: center; /* Центрируем кнопку */
+    margin: 15px 0;
+}
+
+.product-button {
+    padding: 15px 40px; /* Отступы для кнопки */
+    background-color: #9b1700d0; /* Цвет фона кнопки */
+    color: white; /* Цвет текста кнопки */
+    border: none; /* Убираем рамку */
+    border-radius: 20px; /* Скругление углов кнопки */
+    cursor: pointer; /* Курсор при наведении */
+    font-size: 30px; /* Уменьшен размер шрифта для кнопки */
+    transition: background-color 0.3s; /* Плавный переход для фона */
+}
+
+.product-button:hover {
+    background-color: #c0b6ba; /* Цвет фона кнопки при наведении */
+}
+
+footer {
+    background-color: #781706; /* Цвет фона футера */
+    color: white; /* Цвет текста футера */
+    padding: 20px; /* Отступы внутри футера */
+    text-align: center; /* Центрируем текст */
+    position: relative; /* Позволяет использовать absolute позиционирование для элементов внутри футера */
+    bottom: 0; /* Прикрепляем футер к нижней части страницы */
+    width: 100%; /* Ширина футера занимает 100% */
+}
+
+.footer-links {
+    margin: 5px 0; /* Отступы сверху и снизу для ссылок */
+}
+
+.footer-links a {
+    color: white; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    margin: 0 10px; /* Отступы между ссылками */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
