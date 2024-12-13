@@ -93,8 +93,8 @@ function StuffList() {
                                 <img src={product.image} alt={product.title} className="product-image" />
                                 <div className="product-details">
                                     <div className="product-title">{product.title}</div>
-                                    <div>{product.description}</div>
-                                    <div className="product-price">Цена: {product.price}₽</div>
+                                    <div className="description">{product.description}</div>
+                                    <div className="product-price">Цена: {product.price_with_discount}₽</div>
                                     <div className="product-rating">Рейтинг: {product.rating}</div>
                                     <button className="product-button">Перейти</button>
                                 </div>

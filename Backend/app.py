@@ -14,7 +14,7 @@ def get_db_connection():
         password='123',
         host='localhost',
         port=5432,
-        database='database'
+        database='base'
     )
 
 def safe_decode(data):

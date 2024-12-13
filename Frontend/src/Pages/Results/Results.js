@@ -6,7 +6,7 @@ const Results = () => {
   const location = useLocation();
   const { answers } = location.state || { answers: [] };
 
-  // Определяем интересы для каждой категории
+  
   const interests = {
     wife: ["Мода", "Кулинария", "Путешествия"],
     husband: ["Спорт", "Техника", "Автомобили"],
@@ -18,9 +18,9 @@ const Results = () => {
   };
 
   const category = location.pathname.split('/')[2];
-  const age = answers[0]; // Возраст
-  const gender = answers[1]; // Пол (только для родителей)
-  const interest = answers[2]; // Интерес
+  const age = answers[0]; 
+  const gender = answers[1]; 
+  const interest = answers[2]; 
 
   return (
     <div className="results-container">
@@ -28,10 +28,10 @@ const Results = () => {
         <h1>Ваши результаты</h1>
         <ul>
           <li>Возраст: {age}</li>
-          {category === "parents" && <li>Пол: {gender}</li>} {/* Пол только для родителей */}
-          {category === "wife" && <li>Интерес: {interest}</li>} {/* Интерес для жены */}
-          {category === "husband" && <li>Интерес: {interest}</li>} {/* Интерес для мужа */}
-          {category === "kids" && <li>Интерес: {interest}</li>} {/* Интерес для детей */}
+          {category === "parents" && <li>Пол: {gender}</li>}
+          {category === "wife" && <li>Интерес: {interest}</li>} 
+          {category === "husband" && <li>Интерес: {interest}</li>}
+          {category === "kids" && <li>Интерес: {interest}</li>} 
           {category === "parents" && (
             <li>
               Интересы: {interests.parents[gender]?.join(", ") || "Нет интересов"}

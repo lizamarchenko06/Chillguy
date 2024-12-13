@@ -61,14 +61,14 @@ const Survey = () => {
   const handleOptionSelect = (option) => {
     setAnswers(prev => {
       const newAnswers = [...prev];
-      newAnswers[step] = option; // Сохраняем ответ на текущем шаге
+      newAnswers[step] = option; 
       return newAnswers;
     });
 
     if (step < surveys[category].length - 1) {
       setStep(step + 1);
     } else {
-      navigate('/results', { state: { answers } }); // Передаем все ответы в results
+      navigate('/results', { state: { answers } }); 
     }
   };
 
