@@ -42,8 +42,8 @@ function App() {
         <Route path="/stuff-list" element={<StuffList />}/>
         <Route path="/products" element={<StuffList />} />
         <Route path="/products/:productName" element={<ProductDetail />} />
-        <Route path="/phone" element={<Phone />}/>
-      </Routes>
+        <Route path="/product/:category" element={<Phone />} />
+        </Routes>
       
       <ImageDisplay />
     </div>

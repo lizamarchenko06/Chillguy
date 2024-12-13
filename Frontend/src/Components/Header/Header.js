@@ -16,11 +16,11 @@ function Header() {
     };
 
     const handleSearchSubmit = (event) => {
-        event.preventDefault(); // предотвращает перезагрузку страницы
+        event.preventDefault();
         if (searchQuery.toLowerCase() === 'телефон') {
-            navigate('/phone');
+            navigate('/product/smartphone');
         } else if (searchQuery.toLowerCase() === 'смартфон') {
-            navigate('/smartphone');
+            navigate('/product/smartphone');
         } else {
             alert('Ничего не найдено');
         }
