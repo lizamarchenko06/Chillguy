@@ -10,17 +10,18 @@ import GiftForKids from './Pages/GiftForKids/GiftForKids.js';
 import GiftForParents from './Pages/GiftForParents/GiftForParents.js';
 import Survey from './Pages/Survey/Survey.js';
 import Results from './Pages/Results/Results.js';
-import VideoBackground from './Components/VideoBackground.js';
 import ImageDisplay from './Components/Header/ImageDisplay.js';
 import Slider from './Components/Slider.js';
 import StuffList from './Pages/StuffList/StuffList.js';
+import ProductDetail from './Pages/ProductDetail.js';
+import Phone from './Pages/Phone.js'
 
 function App() {
   const location = useLocation();
 
   return (
     <div className='App'>
-      <VideoBackground />
+
       
       {/* Условный рендеринг Header и Slider только на главной странице и другой странице */}
       {(location.pathname === '/' || location.pathname === '/other-page') && (
@@ -39,6 +40,9 @@ function App() {
         <Route path="/survey/:category" element={<Survey />} />
         <Route path="/results" element={<Results />} />
         <Route path="/stuff-list" element={<StuffList />}/>
+        <Route path="/products" element={<StuffList />} />
+        <Route path="/products/:productName" element={<ProductDetail />} />
+        <Route path="/phone" element={<Phone />}/>
       </Routes>
       
       <ImageDisplay />

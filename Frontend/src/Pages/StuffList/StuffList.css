@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #d8d2d2;
+    height: 100%;
 }
 
 .nav-link, .contact-info {

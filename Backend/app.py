@@ -14,9 +14,14 @@ def get_db_connection():
         password='123',
         host='localhost',
         port=5432,
-        database='database'
+        database='base'
     )
 
+def safe_decode(data):
+    try:
+        return data.decode('utf-8')
+    except UnicodeDecodeError:
+        return data.decode('latin1', errors='replace')
 
 @app.route('/api/products', methods=['GET'])
 def get_all_products():
